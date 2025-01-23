@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Greeting Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Bodoni Moda', serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bday.gif');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            perspective: 1000px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            width: 320px;
+            height: 450px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.8s ease;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .card .side {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 20px;
+            backface-visibility: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .card .front {
+            background-color: #ffe5d9;
+            border: 2px solid #fa8072;
+            text-align: center;
+        }
+
+        .card .front h1 {
+            font-size: 2rem;
+            color: #fa8072;
+            text-shadow: 2px 2px #fff;
+        }
+
+        .card .front h3 {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1;
+        }
+
+        .card .back {
+            background-color: #fff176;
+            border: 2px solid #ffcc33;
+            transform: rotateY(180deg);
+            text-align: center;
+        }
+
+        .card .back img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .card .back h3 {
+            font-size: 1.1rem;
+            color: #333;
+            padding: 0 10px;
+            line-height: 1.6;
+        }
+
+        .frames-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .frame {
+            width: 180px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.5s;
+        }
+
+        .frame:hover {
+            transform: scale(1.15);
+        }
+
+        .frame img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .frame p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="side front">
+                <h1>Happy Birthday Aditi my baby</h1>
+                <h3>
+                    Distance may keep us apart today, but my love for you knows no boundaries.
+                    Your smile, your kindness, and your unwavering love fill my heart with happiness every single day.
+                    Wishing you joy, success, and cherished moments.
+                    With all my heart,
+                    listen bachha ye to hua wishing ab suno dekho jab aapse mila tha i was totally broken and dead from inside aapki wajah se sab theek hua hai aap ho jo mere sath ho thats why thank you so much my baby for coming into my life and making it beautiful
+                    i love you so much bachha ❤️❤️❤️
+                    i wish aap humesha khush raho muskurate raho mere pass raho 🫂<br>
+                    <br>-Shashwat
+                </h3>
+            </div>
+            <div class="side back">
+                <img src="cakegif.gif" alt="Birthday Cake">
+                <h3>Sending infinite love, joy, and happiness on your birthday!</h3>
+                <a href="flower.html">
+                    💐
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="frames-container">
+        <div class="frame">
+            <img src="IMG-20241117-WA0007.jpg" alt="Smiling face">
+            <p>Keep smiling, keep shining!</p>
+        </div>
+        <div class="frame">
+            <img src="IMG-20241118-WA0033.jpg" alt="Success image">
+            <p>May this occasion bring you happiness and success!</p>
+        </div>
+        <div class="frame">
+            <img src="IMG-20250114-WA0046.jpg" alt="Blessings image">
+            <p>May God bless you always!</p>
+        </div>
+    </div>
+</body>
+
+</html>
